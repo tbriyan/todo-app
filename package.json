@@ -16,6 +16,7 @@
 		"@nextui-org/link": "2.0.34",
 		"@nextui-org/listbox": "2.1.25",
 		"@nextui-org/navbar": "2.0.36",
+		"@nextui-org/react": "^2.4.6",
 		"@nextui-org/snippet": "2.0.41",
 		"@nextui-org/switch": "2.0.33",
 		"@nextui-org/system": "2.2.5",
@@ -31,6 +32,7 @@
 		"react-dom": "18.3.1"
 	},
 	"devDependencies": {
+		"@iconify/react": "^5.0.2",
 		"@types/node": "20.5.7",
 		"@types/react": "18.3.3",
 		"@types/react-dom": "18.3.0",
