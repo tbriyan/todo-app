@@ -1,0 +1,23 @@
+header {
+    border: 1px dashed red;
+    height: 60px
+}
+
+.navigation-section {
+    display: flex;
+    gap: 5px;
+}
+
+nav {
+    width: 280px;
+    padding: 10px;
+}
+
+section {
+    width: 100%;
+    padding: 10px;
+
+    & div {
+        margin-bottom: 5px;
+    }
+}

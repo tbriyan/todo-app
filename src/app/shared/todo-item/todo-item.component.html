@@ -1,0 +1,29 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon *ngIf="item.isComplete" fontIcon="radio_button_checked" />
+        <mat-icon *ngIf="!item.isComplete" fontIcon="radio_button_unchecked" (click)="setComplete($event)" />  
+        <span>{{ item.title}}</span>
+      </mat-panel-title>
+      <mat-panel-description>
+        <button mat-icon-button aria-label="Example icon button with a menu icon" (click)="archiveTodo($event)">
+          <mat-icon fontIcon="archive" />
+        </button>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field appearance="outline" floatLabel="always">
+      <textarea matInput placeholder="Ingrese la descripción de la tarea" rows="4" [(ngModel)]="item.description"></textarea>
+    </mat-form-field>
+    <div class="row-button">
+      <button mat-flat-button color="primary" (click)="setComplete($event)">
+        <mat-icon fontIcon="check_small" />
+        Completar
+      </button>
+      <button mat-flat-button color="warn" (click)="deleteTodo($event)">
+        <mat-icon fontIcon="delete" />
+        Eliminar 
+      </button>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
